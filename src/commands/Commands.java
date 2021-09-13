@@ -12,11 +12,11 @@ public class Commands extends ListenerAdapter {
 
 		if (args[0].equalsIgnoreCase(Main.prefix + "ping")) {
 			event.getChannel().sendMessage("PONG!").queue();
-		} else if (args[0].equalsIgnoreCase(Main.prefix + "cavera")) {
+		} else if (args[0].equalsIgnoreCase(Main.prefix + "teste")) {
 			EmbedBuilder cavera = new EmbedBuilder();
-			cavera.setTitle("O Maior Lixão");
-			cavera.setDescription("É, obviamente, o Cavera");
-			cavera.setFooter("Lixo");
+			cavera.setTitle("Teste");
+			cavera.setDescription("Apenas um texto para teste.");
+			cavera.setFooter("Fim de teste.");
 
 			event.getChannel().sendMessageEmbeds(cavera.build()).queue();
 			cavera.clear();
