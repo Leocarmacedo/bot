@@ -13,13 +13,13 @@ public class Commands extends ListenerAdapter {
 		if (args[0].equalsIgnoreCase(Main.prefix + "ping")) {
 			event.getChannel().sendMessage("PONG!").queue();
 		} else if (args[0].equalsIgnoreCase(Main.prefix + "teste")) {
-			EmbedBuilder cavera = new EmbedBuilder();
-			cavera.setTitle("Teste");
-			cavera.setDescription("Apenas um texto para teste.");
-			cavera.setFooter("Fim de teste.");
+			EmbedBuilder teste = new EmbedBuilder();
+			teste.setTitle("Teste");
+			teste.setDescription("Apenas um texto para teste.");
+			teste.setFooter("Fim de teste.");
 
-			event.getChannel().sendMessageEmbeds(cavera.build()).queue();
-			cavera.clear();
+			event.getChannel().sendMessageEmbeds(teste.build()).queue();
+			teste.clear();
 		} else if (args[0].equalsIgnoreCase(Main.prefix + "clear")) {
 			if (args.length < 2) {
 				// TODO error
